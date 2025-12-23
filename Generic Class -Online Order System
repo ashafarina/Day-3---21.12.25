@@ -1,0 +1,24 @@
+class Order<T> {
+    T item;
+
+    void placeOrder(T item) {
+        this.item = item;
+    }
+
+    T getOrder() {
+        return item;
+    }
+}
+
+public class OnlineOrder {
+    public static void main(String[] args) {
+        Order<String> order1 = new Order<>();
+        order1.placeOrder("Laptop");
+
+        Order<Integer> order2 = new Order<>();
+        order2.placeOrder(1002);
+
+        System.out.println("Product: " + order1.getOrder());
+        System.out.println("Order ID: " + order2.getOrder());
+    }
+}
