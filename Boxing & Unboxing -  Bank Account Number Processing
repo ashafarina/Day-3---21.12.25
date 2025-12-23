@@ -1,0 +1,9 @@
+public class BoxingUnboxingBank {
+    public static void main(String[] args) {
+        int accNo = 12345;
+        Integer accObj = accNo;      
+
+        int newAccNo = accObj;       
+        System.out.println("Account Number: " + newAccNo);
+    }
+}
