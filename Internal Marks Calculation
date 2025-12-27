@@ -1,0 +1,17 @@
+public class InternalMarks  
+    public static void main(String[] args) {
+
+        int[] marks = {18, 20, 17};
+        int total = 0;
+
+        for (int m : marks)
+            total += m;
+
+        System.out.println("Internal Marks: " + total);
+
+        if (total >= 40)
+            System.out.println("Eligible for Exam");
+        else
+            System.out.println("Not Eligible");
+    }
+}
