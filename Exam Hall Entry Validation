@@ -1,0 +1,14 @@
+public class ExamEntry {
+    public static void main(String[] args) {
+
+        boolean hasID = false;
+
+        try {
+            if (!hasID)
+                throw new Exception("ID Card Required");
+            System.out.println("Entry Allowed");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
