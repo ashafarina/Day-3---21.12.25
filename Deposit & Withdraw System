@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class BankTransaction {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int balance = 3000, choice, amt;
+
+        System.out.println("1.Deposit  2.Withdraw");
+        choice = sc.nextInt();
+
+        if (choice == 1) {
+            amt = sc.nextInt();
+            balance += amt;
+        } else if (choice == 2) {
+            amt = sc.nextInt();
+            if (amt <= balance)
+                balance -= amt;
+            else
+                System.out.println("Insufficient Balance");
+        }
+
+        System.out.println("Current Balance: ₹" + balance);
+    }
+}
