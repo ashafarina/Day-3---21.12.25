@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class DoctorList {
+    public static void main(String[] args) {
+
+        ArrayList<String> doctors = new ArrayList<>();
+        doctors.add("Dr. Kumar");
+        doctors.add("Dr. Priya");
+        doctors.add("Dr. Arun");
+
+        System.out.println("Available Doctors:");
+        for (String d : doctors)
+            System.out.println(d);
+    }
+}
