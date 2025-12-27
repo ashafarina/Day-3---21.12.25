@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class CustomerList {
+    public static void main(String[] args) {
+
+        ArrayList<String> customers = new ArrayList<>();
+        customers.add("Asha");
+        customers.add("Ravi");
+        customers.add("Meena");
+
+        System.out.println("Bank Customers:");
+        for (String c : customers)
+            System.out.println(c);
+    }
+}
