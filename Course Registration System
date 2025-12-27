@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CourseRegister {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        System.out.println("1.Java  2.Python  3.AI");
+        System.out.print("Select Course: ");
+        choice = sc.nextInt();
+
+        switch (choice) {
+            case 1 -> System.out.println("Java Registered");
+            case 2 -> System.out.println("Python Registered");
+            case 3 -> System.out.println("AI Registered");
+            default -> System.out.println("Invalid Choice");
+        }
+    }
+}
